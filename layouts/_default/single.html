@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+</head>
+<body>
+  {{ partial "header.html" . }}
+  {{ partial "navbar.html" . }}
+  <main>
+    <article>
+      <header>
+      <h1>{{ .Title }}</h1>
+        {{ .Date.Format "2006/01/02" }}
+        {{ if isset .Params "eyecatch" }}
+        <img src="{{ .Site.BaseUrl }}/images/eyecatch/{{ .Params.eyecatch }}" alt="{{ .Title }}">
+        {{ end }}
+      </header>
+      {{ .Content }}
+      <footer>
+        {{ partial "tags.html" . }}
+      </footer>
+    </article>
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

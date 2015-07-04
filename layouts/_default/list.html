@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <title>{{ .Site.Title }}</title>
+</head>
+<body>
+  {{ partial "header.html" . }}
+  {{ partial "navbar.html" . }}
+  <main>
+    {{ range .Data.Pages }}
+    <article>
+      <header>
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        {{ .Date.Format "2006/01/02" }}
+        {{ if isset .Params "eyecatch" }}
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ .Site.BaseUrl }}images/eyecatch/{{ .Params.eyecatch }}" alt="{{ .Title }}">
+        </a>
+        {{ end }}
+      </header>
+      {{ .Summary }}
+      {{ if .Truncated }}
+      <footer>
+        <a href="{{ .RelPermalink }}">Read More…</a>
+        {{ partial "tags.html" . }}
+      </footer>
+      {{ end }}
+    </article>
+    {{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>
