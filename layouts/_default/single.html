@@ -2,25 +2,34 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
   <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="stylesheet" type="text/css" href="/common.css">
+  <link rel="stylesheet" type="text/css" href="/single.css">
 </head>
 <body>
   {{ partial "header.html" . }}
   {{ partial "navbar.html" . }}
-  <main>
-    <article>
-      <header>
-      <h1>{{ .Title }}</h1>
-        {{ .Date.Format "2006/01/02" }}
-        {{ if isset .Params "eyecatch" }}
-        <img src="{{ .Site.BaseUrl }}/images/eyecatch/{{ .Params.eyecatch }}" alt="{{ .Title }}">
-        {{ end }}
-      </header>
-      {{ .Content }}
-      <footer>
-        {{ partial "tags.html" . }}
-      </footer>
-    </article>
-  </main>
-  {{ partial "footer.html" . }}
+  <div class="container">
+    <div id="main">
+      <div class="article">
+        <header>
+          <div class="article-header">
+            <h1>{{ .Title }}</h1>
+            <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
+            {{ partial "tags.html" . }}
+          </div>
+        </header>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        <footer>
+          <div class="article-footer">
+            {{ partial "tags.html" . }}
+          </div>
+        </footer>
+      </div><!-- .article -->
+    </div><!-- #main-->
+    {{ partial "sidebar.html" . }}
+    {{ partial "footer.html" . }}
+  </div><!-- .container -->
 </body>
 </html>

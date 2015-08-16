@@ -1,0 +1,13 @@
+.article .content img {
+  max-width: 140px;
+  max-height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.article .eyecatch img {
+  max-width: 100%;
+  max-height: 100%;
+}
+

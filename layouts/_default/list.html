@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/common.css">
+  <link rel="stylesheet" type="text/css" href="/list.css">
   <title>{{ .Site.Title }}</title>
 </head>
 <body>
   {{ partial "header.html" . }}
   {{ partial "navbar.html" . }}
-  <main>
-    {{ range .Data.Pages }}
-    <article>
-      <header>
-        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-        {{ .Date.Format "2006/01/02" }}
+  <div class="container">
+    <div id="main">
+      {{ range .Data.Pages }}
+      <div class="article">
+        <header>
+          <div class="article-header">
+            <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+            <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
+            {{ partial "tags.html" . }}
+          </div>
+        </header>
         {{ if isset .Params "eyecatch" }}
-        <a href="{{ .RelPermalink }}">
-          <img src="{{ .Site.BaseUrl }}images/eyecatch/{{ .Params.eyecatch }}" alt="{{ .Title }}">
-        </a>
+        <div class="eyecatch">
+            <a href="{{ .RelPermalink }}">
+              <img src="{{ .Site.BaseUrl }}images/{{ .Params.eyecatch }}" alt="{{ .Title }}">
+            </a>
+        </div>
         {{ end }}
-      </header>
-      {{ .Summary }}
-      {{ if .Truncated }}
-      <footer>
-        <a href="{{ .RelPermalink }}">Read More…</a>
-        {{ partial "tags.html" . }}
-      </footer>
+        <div class="content{{ if isset .Params "eyecatch" }} with-eyecatch{{ end }}">
+          {{ replace .Summary "<br />" "" | safeHTML }}
+        </div>
+        {{ if .Truncated }}
+        <footer>
+          <div class="article-footer">
+            <a class="readmore" href="{{ .RelPermalink }}">Read More… »</a>
+          </div>
+        </footer>
+        {{ end }}
+      </div><!-- .article -->
       {{ end }}
-    </article>
-    {{ end }}
-  </main>
-  {{ partial "footer.html" . }}
+    </div><!-- #main -->
+    {{ partial "sidebar.html" . }}
+    {{ partial "footer.html" . }}
+  </div><!-- .container -->
 </body>
 </html>

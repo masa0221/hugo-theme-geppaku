@@ -1,10 +1,12 @@
 <footer>
-  <span>
-    Copyright {{ .Site.LastChange.Format "2006" }} 
-    {{ if isset .Site "copyright" }}
-    {{ .Site.Copyright }}
-    {{ else }}
-    <a href="{{ .Site.BaseURL}}">{{ .Site.Title }}</a>
-    {{ end }}
-  </span>
+  <div id="site-footer">
+    <span>
+      Copyright {{ .Site.LastChange.Format "2006" }} 
+      {{ if isset .Site "copyright" }}
+      {{ .Site.Copyright }}
+      {{ else }}
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      {{ end }}
+    </span>
+  </div>
 </footer>

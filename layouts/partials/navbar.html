@@ -1,10 +1,9 @@
-<nav>
-  <span>Blog Categories</span>
+<div class="categories">
   <ul>
     {{ range $category, $taxonomy := .Site.Taxonomies.categories }}
-    <ui>
-      <a href="/categories/{{ $category | urlize }}">{{ $category }}</a>
-    </ui>
+    <li>
+      <a href="/categories/{{ $category | urlize }}"><span></span>{{ $category }}</a>
+    </li>
     {{ end }}
   </ul>
-</nav>
+</div>
