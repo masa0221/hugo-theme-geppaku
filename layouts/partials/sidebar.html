@@ -1,9 +1,15 @@
 <div class="sidebar">
-  <div class="categories">
+  <div class="sidebar-content">
+    <div class="sidebar-header">
+      <span>スポンサー</span>
+    </div>
+    {{ partial "adsense/sidebar.html" . }}
+  </div>
+  <div class="sidebar-content">
     <div class="sidebar-header">
       <span>カテゴリ</span>
     </div>
-    <div class="sidebar-content">
+    <div class="categories">
       <ul>
         {{ range $category, $taxonomy := .Site.Taxonomies.categories }}
         <li>

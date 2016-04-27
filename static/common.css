@@ -114,9 +114,14 @@ img {
   height: auto !important; 
 }
 
+.sidebar-content {
+  margin-bottom: 30px;
+}
+
 .sidebar-header {
   padding: 5px 0px 5px 10px;
   margin-bottom: 15px;
+  border-bottom: 1px solid #ACAEB2;
 }
 
 .sidebar-header span {
@@ -155,9 +160,6 @@ img {
  */
 .categories {
   clear: left;
-  height: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ACAEB2;
 }
 
 .categories li {
@@ -166,7 +168,7 @@ img {
   white-space: nowrap;
 }
 
-.categories .sidebar-content span {
+.categories span {
   display: inline-block;
   background: #b4b3ba;
   width: 6px;

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/common.css">
+  {{ partial "head.html" . }}
   <link rel="stylesheet" type="text/css" href="/single.css">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
 </head>
 <body>
   {{ partial "header.html" . }}
@@ -25,6 +24,7 @@
         <footer>
           <div class="article-footer">
             {{ partial "tags.html" . }}
+            {{ partial "adsense/single-bottom.html" . }}
             {{ partial "share.html" . }}
           </div>
         </footer>

@@ -71,7 +71,7 @@ h4:before {
 
 #share-buttons {
   clear: left;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 #share-buttons li {
@@ -83,6 +83,10 @@ h4:before {
 .article-footer {
   clear: left;
   padding-top: 30px;
+}
+
+.article-footer .adsense {
+  margin-bottom: 30px;
 }
 
 .article-footer .article-tags {
