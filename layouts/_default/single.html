@@ -26,6 +26,22 @@
             {{ partial "tags.html" . }}
             {{ partial "adsense/single-bottom.html" . }}
             {{ partial "share.html" . }}
+            {{ if or .Prev .Next }}
+            <div id="pagenavigation-next-prev">
+              {{ if .Prev }}
+              <div id="pagenavigation-prev">
+                <span class="pagenav-label">前の投稿</span>
+                <a href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
+              </div>
+              {{ end }}
+              {{ if .Next }}
+              <div id="pagenavigation-next">
+                <span class="pagenav-label">次の投稿</span>
+                <a href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>
+              </div>
+              {{ end }}
+              </div>
+            {{ end }}
           </div>
         </footer>
       </div><!-- .article -->

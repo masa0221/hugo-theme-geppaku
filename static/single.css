@@ -75,7 +75,8 @@ h4:before {
 
 #share-buttons {
   clear: left;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  overflow: auto;
 }
 
 #share-buttons li {
@@ -95,6 +96,30 @@ h4:before {
 
 .article-footer .article-tags {
   margin-bottom: 50px;
+}
+
+#pagenavigation-next-prev {
+  clear: left;
+}
+
+#pagenavigation-prev {
+  margin-bottom: 10px;
+}
+
+#pagenavigation-next-prev span {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#pagenavigation-next-prev a {
+  color: #6E6E6E;
+  font-size: 14px;
+}
+
+#pagenavigation-next-prev a:hover {
+  color: #4078C0;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {
