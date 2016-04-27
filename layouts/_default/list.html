@@ -22,9 +22,11 @@
         {{ partial "tags.html" . }}
       </div><!-- .article -->
       {{ end }}
-      <nav id="pager">
+      <nav>
+        <div id="pager">
         {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
         {{ template "_internal/pagination.html" . }}
+        </div>
       </nav>
     </div><!-- #main -->
     {{ partial "sidebar.html" . }}

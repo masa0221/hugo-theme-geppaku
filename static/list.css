@@ -7,7 +7,7 @@
   border-bottom: 1px solid #ACAEB2;
 }
 
-.articles-header h1 {
+h1 {
   font-size: 30px;
   color: #303030;
   text-decoration: none;
@@ -21,23 +21,25 @@
   border-bottom: 1px solid #ACAEB2;
 }
 
-.article h2 a {
+h2 {
   font-size: 18px;
+}
+
+.article h2 a {
   color: #303030;
   text-decoration: none;
 }
 
 .article h2 a:hover {
-  font-size: 18px;
   color: #4078C0;
-  text-decoration: none;
 }
 
 /**
  * pager
  */
 #pager {
-  width: 100%;
+  width: auto;
+  margin-bottom: 20px;
 }
 
 #pager .pagination {
@@ -71,4 +73,29 @@
   padding: 10px 8px;
   background: #747474;
   color: #FBFDFF;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  #main {
+    margin-bottom: 100px;
+    float: none;
+  }
+
+  .article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  #pager .pagination {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
