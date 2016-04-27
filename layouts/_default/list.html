@@ -8,40 +8,28 @@
 </head>
 <body>
   {{ partial "header.html" . }}
-  {{ partial "navbar.html" . }}
   <div class="container">
     <div id="main">
-      {{ range .Data.Pages }}
+      {{ if not .IsHome }}
+      <div class="articles-header">
+        <h1>Archive: <span id="archive-value">{{ .Title }}</span></h1>
+      </div>
+      {{ end }}
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+      {{ range $paginator.Pages }}
       <div class="article">
-        <header>
-          <div class="article-header">
-            <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-            <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
-            {{ partial "tags.html" . }}
-          </div>
-        </header>
-        {{ if isset .Params "eyecatch" }}
-        <div class="eyecatch">
-            <a href="{{ .RelPermalink }}">
-              <img src="{{ .Site.BaseUrl }}images/{{ .Params.eyecatch }}" alt="{{ .Title }}">
-            </a>
-        </div>
-        {{ end }}
-        <div class="content{{ if isset .Params "eyecatch" }} with-eyecatch{{ end }}">
-          {{ replace .Summary "<br />" "" | safeHTML }}
-        </div>
-        {{ if .Truncated }}
-        <footer>
-          <div class="article-footer">
-            <a class="readmore" href="{{ .RelPermalink }}">Read More… »</a>
-          </div>
-        </footer>
-        {{ end }}
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
+        {{ partial "tags.html" . }}
       </div><!-- .article -->
       {{ end }}
+      <nav id="pager">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ template "_internal/pagination.html" . }}
+      </nav>
     </div><!-- #main -->
     {{ partial "sidebar.html" . }}
-    {{ partial "footer.html" . }}
   </div><!-- .container -->
+  {{ partial "footer.html" . }}
 </body>
 </html>

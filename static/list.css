@@ -1,13 +1,74 @@
-.article .content img {
-  max-width: 140px;
-  max-height: 100px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+/**
+ * articles-header
+ */
+.articles-header {
+  margin-bottom: 35px;
+  padding: 0px 20px 4px 20px;
+  border-bottom: 1px solid #ACAEB2;
+}
+
+.articles-header h1 {
+  font-size: 30px;
+  color: #303030;
+  text-decoration: none;
+}
+
+/**
+ * articles
+ */
+.article {
+  margin-bottom: 35px;
+  border-bottom: 1px solid #ACAEB2;
+}
+
+.article h2 a {
+  font-size: 18px;
+  color: #303030;
+  text-decoration: none;
+}
+
+.article h2 a:hover {
+  font-size: 18px;
+  color: #4078C0;
+  text-decoration: none;
+}
+
+/**
+ * pager
+ */
+#pager {
+  width: 100%;
+}
+
+#pager .pagination {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#pager .pagination li {
   float: left;
+  list-style: none;
 }
 
-.article .eyecatch img {
-  max-width: 100%;
-  max-height: 100%;
+#pager .pagination a {
+  text-decoration: none;
+  color: #303030;
+  font-size: 14px;
+  padding: 10px 8px;
+  margin-right: 10px;
+  border: 1px solid #747474;
 }
 
+#pager .pagination a:hover {
+  background: #F4F4F4;
+  color: #303030;
+  font-size: 14px;
+  padding: 10px 8px;
+  margin-right: 10px;
+}
+
+#pager .pagination .active a {
+  padding: 10px 8px;
+  background: #747474;
+  color: #FBFDFF;
+}

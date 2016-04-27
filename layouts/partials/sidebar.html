@@ -1,14 +1,16 @@
 <div class="sidebar">
-  <div class="tags">
+  <div class="categories">
     <div class="sidebar-header">
-      <span>Tags</span>
+      <span>カテゴリ</span>
     </div>
-    <ul>
-      {{ range $tag, $taxonomy := .Site.Taxonomies.tags }}
-      <li>
-        <a href="/tags/{{ $tag | urlize }}"><span></span>{{ $tag }}</a>
-      </li>
-      {{ end }}
-    </ul>
+    <div class="sidebar-content">
+      <ul>
+        {{ range $category, $taxonomy := .Site.Taxonomies.categories }}
+        <li>
+          <a href="/categories/{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
   </div>
 </div>

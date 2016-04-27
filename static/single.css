@@ -3,7 +3,7 @@ h2 {
     padding-left: 45px;
     padding-top: 40px;
     padding-bottom: 20px;
-    color: #6b6b6b;
+    color: #303030;
     font-size: 25px;
     line-height; 30px;
 }
@@ -33,7 +33,7 @@ h3 {
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 10px;
-    color: #6b6b6b;
+    color: #303030;
     font-size: 20px;
     line-height; 30px;
 }
@@ -53,7 +53,7 @@ h4 {
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
-    color: #6b6b6b;
+    color: #303030;
     font-size: 16px;
     line-height; 20px;
     content: "";
@@ -69,7 +69,22 @@ h4:before {
     content: "";
 }
 
+#share-buttons {
+  clear: left;
+  margin-bottom: 100px;
+}
+
+#share-buttons li {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+
 .article-footer {
   clear: left;
   padding-top: 30px;
+}
+
+.article-footer .article-tags {
+  margin-bottom: 50px;
 }

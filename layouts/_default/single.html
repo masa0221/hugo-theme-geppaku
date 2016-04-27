@@ -8,7 +8,6 @@
 </head>
 <body>
   {{ partial "header.html" . }}
-  {{ partial "navbar.html" . }}
   <div class="container">
     <div id="main">
       <div class="article">
@@ -18,6 +17,7 @@
             <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
             {{ partial "tags.html" . }}
           </div>
+          {{ partial "share.html" . }}
         </header>
         <div class="content">
           {{ .Content }}
@@ -25,12 +25,13 @@
         <footer>
           <div class="article-footer">
             {{ partial "tags.html" . }}
+            {{ partial "share.html" . }}
           </div>
         </footer>
       </div><!-- .article -->
     </div><!-- #main-->
     {{ partial "sidebar.html" . }}
-    {{ partial "footer.html" . }}
   </div><!-- .container -->
+  {{ partial "footer.html" . }}
 </body>
 </html>
