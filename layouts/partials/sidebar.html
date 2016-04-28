@@ -7,6 +7,25 @@
   </div>
   <div class="sidebar-content">
     <div class="sidebar-header">
+      <span>About me</span>
+    </div>
+    <div id="author">
+      <span>Masashi Tsuru</span>
+      <div>
+        {{ with .Site.Params.github }}
+        <a href="https://github.com/{{ . }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        {{ end }}
+        {{ with .Site.Params.twitter }}
+        <a href="https://twitter.com/{{ . }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        {{ end }}
+        {{ with .Site.Params.linkedin }}
+        <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-content">
+    <div class="sidebar-header">
       <span>カテゴリ</span>
     </div>
     <div class="categories">

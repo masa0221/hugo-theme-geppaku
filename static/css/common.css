@@ -11,6 +11,15 @@ img {
   height: auto;
 }
 
+a {
+  color: #303030;
+}
+
+a:hover {
+  color: #4078C0;
+  list-style: none;
+}
+
 .container {
   width: 1000px;
   margin-right: auto;
@@ -189,6 +198,22 @@ img {
 .categories a:hover {
   color: #4078C0;
   list-style: none;
+}
+
+/**
+ * author
+ */
+#author {
+  margin-left: 14px;
+}
+
+#author span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#author a {
+  margin-right: 3px;
 }
 
 /**
