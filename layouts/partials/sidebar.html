@@ -5,25 +5,27 @@
     </div>
     {{ partial "adsense/sidebar.html" . }}
   </div>
+  {{ if .Site.Author }}
   <div class="sidebar-content">
     <div class="sidebar-header">
-      <span>About me</span>
+      <span>Author</span>
     </div>
     <div id="author">
-      <span>Masashi Tsuru</span>
+      <span>{{ .Site.Author.name }}</span>
       <div>
-        {{ with .Site.Params.github }}
+        {{ with .Site.Author.github }}
         <a href="https://github.com/{{ . }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         {{ end }}
-        {{ with .Site.Params.twitter }}
+        {{ with .Site.Author.twitter }}
         <a href="https://twitter.com/{{ . }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
         {{ end }}
-        {{ with .Site.Params.linkedin }}
+        {{ with .Site.Author.linkedin }}
         <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
         {{ end }}
       </div>
     </div>
   </div>
+  {{ end }}
   <div class="sidebar-content">
     <div class="sidebar-header">
       <span>カテゴリ</span>
