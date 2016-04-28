@@ -26,6 +26,7 @@
             {{ partial "tags.html" . }}
             {{ partial "adsense/single-bottom.html" . }}
             {{ partial "share.html" . }}
+            {{ partial "disqus.html" . }}
             {{ if or .Prev .Next }}
             <div id="pagenavigation-next-prev">
               {{ if .Next }}
