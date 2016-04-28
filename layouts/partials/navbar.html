@@ -1,9 +1,0 @@
-<div class="categories">
-  <ul>
-    {{ range $category, $taxonomy := .Site.Taxonomies.categories }}
-    <li>
-      <a href="/categories/{{ $category | urlize }}"><span></span>{{ $category }}</a>
-    </li>
-    {{ end }}
-  </ul>
-</div>

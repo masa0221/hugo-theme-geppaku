@@ -102,8 +102,8 @@ h4:before {
   clear: left;
 }
 
-#pagenavigation-prev {
-  margin-bottom: 10px;
+#pagenavigation-next {
+  margin-bottom: 15px;
 }
 
 #pagenavigation-next-prev span {
