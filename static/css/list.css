@@ -3,7 +3,7 @@
  */
 .articles-header {
   margin-bottom: 35px;
-  padding: 0px 20px 4px 20px;
+  padding: 20px 20px 10px 10px;
   border-bottom: 1px solid #ACAEB2;
 }
 
@@ -17,7 +17,7 @@ h1 {
  * articles
  */
 .article {
-  margin-bottom: 35px;
+  margin: 10px 0px 30px 0px;
   border-bottom: 1px solid #ACAEB2;
 }
 
@@ -75,6 +75,13 @@ h2 {
   color: #FBFDFF;
 }
 
+@media screen and (max-width: 950px) {
+  #main {
+    margin-bottom: 100px;
+    float: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 16px;
@@ -82,11 +89,6 @@ h2 {
 
   h2 {
     font-size: 14px;
-  }
-
-  #main {
-    margin-bottom: 100px;
-    float: none;
   }
 
   .article {

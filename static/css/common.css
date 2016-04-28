@@ -232,27 +232,12 @@ img {
   }
 
   #main {
+    float: none;
+    width: auto;
     margin-bottom: 5px;
   }
 
   .container {
-    width: auto;
-  }
-
-  .sidebar {
-    clear: left;
-    float: none;
-    padding-bottom: 20px;
-    margin-left: 10px;
-  }
-
-  #site-footer {
-    padding-left: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #main {
     width: auto;
   }
 
@@ -262,14 +247,32 @@ img {
 
   .article {
     width: auto;
+    padding: 0px 10px 30px 10px;
   }
 
   .sidebar {
+    clear: left;
+    float: none;
+    margin-left: 10px;
     width: auto;
     padding: 0px;
     margin: 0 auto;
   }
 
+  .sidebar-header {
+    width: auto;
+  }
+
+  .sidebar-content {
+    width: auto;
+  }
+
+  #site-footer {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .sidebar .adsense {
     margin-left: 10px;
   }
