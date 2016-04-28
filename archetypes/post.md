@@ -2,15 +2,9 @@
 date = ""
 draft = false
 title = ""
-url = ""
-categories = [
-  "",
-  ""
-  ]
-tags = [
-  "",
-  ""
-  ]
+slug = ""
+categories = [""]
+tags = [""]
 +++
 Sammary
 {{< readmore >}}
