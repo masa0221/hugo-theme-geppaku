@@ -192,6 +192,13 @@ img {
 }
 
 /**
+ * RSS
+ */
+#rss {
+  margin-left: 14px;
+}
+
+/**
  * footer
  */
 #site-footer {

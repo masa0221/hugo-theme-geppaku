@@ -1,6 +1,10 @@
+  {{ if .RSSlink }}
+  <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{ end }}
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/common.css">
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/common.css">
   <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
   <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
   <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
