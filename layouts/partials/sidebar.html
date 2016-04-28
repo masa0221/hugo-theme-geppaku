@@ -45,7 +45,7 @@
       <span>RSS</span>
     </div>
     <div id="rss">
-      <a href="{{ if .RSSlink }}{{ .RSSlink }}{{ else }}{{ .Site.BaseURL }}index.xml{{ end }}" type="application/rss+xml" target="_blank"><img src="{{ .Site.BaseURL }}/images/rss.png"></a>
+      <a href="{{ if .RSSlink }}{{ .RSSlink }}{{ else }}{{ .Site.BaseURL }}/index.xml{{ end }}" type="application/rss+xml" target="_blank"><img src="{{ .Site.BaseURL }}/images/rss.png"></a>
     </div>
   </div>
 </div>
