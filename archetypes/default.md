@@ -1,5 +1,0 @@
-+++
-date = ""
-draft = false
-title = ""
-+++
