@@ -217,15 +217,27 @@ a:hover {
 }
 
 #author a {
-  margin-right: 3px;
+  color: #747474;
+  margin-right: 5px;
+  list-style: none;
+}
+
+#author a:hover {
+  color: #4078C0;
 }
 
 /**
  * RSS
  */
-#rss {
+#rss a {
+  color: #747474;
   margin-left: 14px;
 }
+
+#rss a:hover {
+  color: #4078C0;
+}
+
 
 /**
  * footer

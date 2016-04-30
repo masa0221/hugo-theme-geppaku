@@ -8,14 +8,14 @@
     <div id="author">
       <span>{{ .Site.Author.name }}</span>
       <div>
-        {{ with .Site.Author.github }}
-        <a href="https://github.com/{{ . }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-        {{ end }}
         {{ with .Site.Author.twitter }}
-        <a href="https://twitter.com/{{ . }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/{{ . }}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        {{ end }}
+        {{ with .Site.Author.github }}
+        <a href="https://github.com/{{ . }}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
         {{ end }}
         {{ with .Site.Author.linkedin }}
-        <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
         {{ end }}
       </div>
     </div>
@@ -40,7 +40,9 @@
       <span>RSS</span>
     </div>
     <div id="rss">
-      <a href="{{ if .RSSlink }}{{ .RSSlink }}{{ else }}{{ .Site.BaseURL }}/index.xml{{ end }}" type="application/rss+xml" target="_blank"><img src="{{ .Site.BaseURL }}/images/rss.png"></a>
+      <a href="{{ if .RSSlink }}{{ .RSSlink }}{{ else }}{{ .Site.BaseURL }}/index.xml{{ end }}" type="application/rss+xml" target="_blank">
+        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
 </div>
