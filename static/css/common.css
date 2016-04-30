@@ -21,7 +21,6 @@ a {
 
 a:hover {
   color: #4078C0;
-  list-style: none;
 }
 
 .container {
@@ -100,12 +99,10 @@ a:hover {
 }
 
 .article .content a {
-  color: #6E6E6E;
   font-size: 14px;
 }
 
 .article .content a:hover {
-  color: #4078C0;
   font-size: 14px;
 }
 
@@ -192,7 +189,6 @@ a:hover {
 }
 
 .categories a {
-  background: #FBFDFF;
   color: #747474;
   text-decoration: none;
   padding: 5px 20px;
@@ -257,6 +253,10 @@ a:hover {
 
 #site-footer a {
   color: #303030;
+}
+
+#site-footer a:hover {
+  color: #4078C0;
 }
 
 /**
