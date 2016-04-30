@@ -31,13 +31,13 @@
             <div id="pagenavigation-next-prev">
               {{ if .Next }}
               <div id="pagenavigation-next">
-                <span class="pagenav-label">前の投稿</span>
+                <span class="pagenav-label">Previous</span>
                 <a href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>
               </div>
               {{ end }}
               {{ if .Prev }}
               <div id="pagenavigation-prev">
-                <span class="pagenav-label">次の投稿</span>
+                <span class="pagenav-label">Next</span>
                 <a href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
               </div>
               {{ end }}
