@@ -29,7 +29,7 @@ tags = ["hugo"]
 Example of config.toml file:
 ```toml
 baseurl = "http://your-site-here"
-languageCode = ""en-us"
+languageCode = "en-us"
 title = "your site title"
 theme= "hugo-ashen-simple-theme"
 googleAnalytics = ""
