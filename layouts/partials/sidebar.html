@@ -1,10 +1,5 @@
 <div class="sidebar">
-  <div class="sidebar-content">
-    <div class="sidebar-header">
-      <span>Sponsored link</span>
-    </div>
-    {{ partial "adsense/sidebar.html" . }}
-  </div>
+  {{ partial "adsense/sidebar.html" }}
   {{ if .Site.Author }}
   <div class="sidebar-content">
     <div class="sidebar-header">
