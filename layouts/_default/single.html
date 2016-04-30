@@ -24,7 +24,12 @@
         <footer>
           <div class="article-footer">
             {{ partial "tags.html" . }}
-            {{ partial "adsense/single-bottom.html" }}
+            {{ with .Site.Params.adsense.content }}
+            <div class="adsense">
+              <span class="sponsor-label">Sponsored link</span>
+              {{ partial . }}
+            </div>
+            {{ end }}
             {{ partial "share.html" . }}
             {{ partial "disqus.html" . }}
             {{ if or .Prev .Next }}
