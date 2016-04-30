@@ -55,7 +55,7 @@ googleAnalytics = ""
         google   = true
         pocket   = true
         # Please set id when you want to display facebook
-        facebookAppId = "337448966278514"
+        facebookAppId = "your app id"
 
     [params.adsense]
         # If you want to display Google adsense set these
