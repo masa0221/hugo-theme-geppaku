@@ -15,6 +15,10 @@ img {
   height: auto;
 }
 
+p {
+  margin-bottom: 30px;
+}
+
 a {
   color: #303030;
 }

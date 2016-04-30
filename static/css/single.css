@@ -1,8 +1,6 @@
 h2 {
     position: relative;
-    padding-left: 45px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 40px;
     color: #303030;
     font-size: 25px;
     line-height; 30px;
@@ -10,7 +8,7 @@ h2 {
 
 h2:before {
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: 12px;
     width: 14px;
     height: 14px;
@@ -20,7 +18,7 @@ h2:before {
 
 h2:after {
     position:  absolute;
-    top: 40px;
+    top: 20px;
     left: 2px;
     width: 17px;
     height: 17px;
@@ -30,9 +28,7 @@ h2:after {
 
 h3 {
     position: relative;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 30px;
     color: #303030;
     font-size: 20px;
     line-height; 30px;
@@ -40,7 +36,7 @@ h3 {
 
 h3:before {
     position: absolute;
-    top: 35px;
+    top: 15px;
     left: 0px;
     width: 13px;
     height: 13px;
@@ -50,9 +46,7 @@ h3:before {
 
 h4 {
     position: relative;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 30px;
     color: #303030;
     font-size: 16px;
     line-height; 20px;
@@ -61,7 +55,7 @@ h4 {
 
 h4:before {
     position: absolute;
-    top: 22px;
+    top: 12px;
     left: 2px;
     width: 10px;
     height: 10px;
