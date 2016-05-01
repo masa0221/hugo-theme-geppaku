@@ -73,6 +73,14 @@ h4:before {
   display:inline-block;
 }
 
+.article .content ul {
+  margin-bottom: 20px;
+}
+
+.article .content p {
+  margin-bottom: 20px;
+}
+
 .adsense .sponsor-label {
   display: block;
   font-size: 13px;
