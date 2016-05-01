@@ -6,54 +6,56 @@
   <title>{{ .Title }} | {{ .Site.Title }}</title>
 </head>
 <body>
-  {{ partial "header.html" . }}
-  <div class="container">
-    <div id="main">
-      <div class="article">
-        <header>
-          <div class="article-header">
-            <h1>{{ .Title }}</h1>
-            <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
-            {{ partial "tags.html" . }}
-          </div>
-          {{ partial "share.html" . }}
-        </header>
-        <div class="content">
-          {{ .Content }}
-        </div>
-        <footer>
-          <div class="article-footer">
-            {{ partial "tags.html" . }}
-            {{ with .Site.Params.adsense.content }}
-            <div class="adsense">
-              <span class="sponsor-label">Sponsored link</span>
-              {{ partial . }}
+  <div id="wrap">
+    {{ partial "header.html" . }}
+    <div class="container">
+      <div id="main">
+        <div class="article">
+          <header>
+            <div class="article-header">
+              <h1>{{ .Title }}</h1>
+              <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
+              {{ partial "tags.html" . }}
             </div>
-            {{ end }}
             {{ partial "share.html" . }}
-            {{ partial "disqus.html" . }}
-            {{ if or .Prev .Next }}
-            <div id="pagenavigation-next-prev">
-              {{ if .Next }}
-              <div id="pagenavigation-next">
-                <span class="pagenav-label">Previous</span>
-                <a href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>
-              </div>
-              {{ end }}
-              {{ if .Prev }}
-              <div id="pagenavigation-prev">
-                <span class="pagenav-label">Next</span>
-                <a href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
-              </div>
-              {{ end }}
-              </div>
-            {{ end }}
+          </header>
+          <div class="content">
+            {{ .Content }}
           </div>
-        </footer>
-      </div><!-- .article -->
-    </div><!-- #main-->
-    {{ partial "sidebar.html" . }}
-  </div><!-- .container -->
-  {{ partial "footer.html" . }}
+          <footer>
+            <div class="article-footer">
+              {{ partial "tags.html" . }}
+              {{ with .Site.Params.adsense.content }}
+              <div class="adsense">
+                <span class="sponsor-label">Sponsored link</span>
+                {{ partial . }}
+              </div>
+              {{ end }}
+              {{ partial "share.html" . }}
+              {{ partial "disqus.html" . }}
+              {{ if or .Prev .Next }}
+              <div id="pagenavigation-next-prev">
+                {{ if .Next }}
+                <div id="pagenavigation-next">
+                  <span class="pagenav-label">Previous</span>
+                  <a href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>
+                </div>
+                {{ end }}
+                {{ if .Prev }}
+                <div id="pagenavigation-prev">
+                  <span class="pagenav-label">Next</span>
+                  <a href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>
+                </div>
+                {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </footer>
+        </div><!-- .article -->
+      </div><!-- #main-->
+      {{ partial "sidebar.html" . }}
+    </div><!-- .container -->
+    {{ partial "footer.html" . }}
+  </div><!-- #wrap -->
 </body>
 </html>
