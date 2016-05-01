@@ -95,16 +95,16 @@ h4:before {
   position: relative;
 
   background: #F4F4F4;
-  padding: 20px 25px 10px 40px;
+  padding: 20px 25px 10px 45px;
   margin: 5px 17px 20px 0px;
 
   font-size: 13px;
-  font-family: serif;
+  font-style: italic;
 }
 
 .article .content blockquote:before{
   position: absolute;
-  left: 10px;
+  left: 5px;
   top: 0px;
 
   content: "\201C";
