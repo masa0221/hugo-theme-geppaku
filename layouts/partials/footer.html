@@ -1,6 +1,12 @@
 <footer>
   <div id="site-footer">
     <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
-    <span>Copyright {{ .Site.LastChange.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></span>
+    <span>
+      {{ if .Site.Copyright }}
+      {{ .Site.Copyright }}
+      {{ else }}
+      Copyright {{ .Site.LastChange.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      {{ end }}
+    </span>
   </div>
 </footer>
