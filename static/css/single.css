@@ -91,6 +91,37 @@ h4:before {
   word-wrap: break-word;
 }
 
+.article .content blockquote {
+  position: relative;
+
+  background: #F4F4F4;
+  padding: 20px 25px 10px 40px;
+  margin: 5px 17px 20px 0px;
+
+  font-size: 13px;
+  font-family: serif;
+}
+
+.article .content blockquote:before{
+  position: absolute;
+  left: 10px;
+  top: 0px;
+
+  content: "\201C";
+  font-size: 60px;
+  color: #6b6b6b;
+}
+
+.article .content blockquote p {
+  margin-bottom: 5px;
+}
+
+.article .content blockquote small {
+  display: block;
+  text-align:right;
+  margin-top: 10px;
+}
+
 .adsense .sponsor-label {
   display: block;
   font-size: 13px;
