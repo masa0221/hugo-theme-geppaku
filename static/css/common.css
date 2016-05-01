@@ -27,7 +27,6 @@ a:hover {
   width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  overflow: auto;
 }
 
 /**
@@ -69,8 +68,9 @@ a:hover {
  */
 .article {
   width: 590px;
-  padding: 0px 20px 30px 20px;
+  padding: 0px 20px 20px 20px;
   clear: left;
+  overflow: hidden;
 }
 
 .article .posttime {
@@ -82,7 +82,11 @@ a:hover {
 
 .article .article-tags {
   font-size: 12px;
-  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.article .article-tags a {
+  line-height: 20px;
 }
 
 .article .content {

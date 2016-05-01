@@ -1,16 +1,8 @@
-/**
- * articles-header
- */
-.articles-header {
-  margin-bottom: 35px;
-  padding: 20px 20px 10px 10px;
-  border-bottom: 1px solid #ACAEB2;
-}
-
 h1 {
   font-size: 30px;
   color: #303030;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 /**
@@ -79,6 +71,10 @@ h2 {
   #main {
     margin-bottom: 100px;
     float: none;
+  }
+
+  h1 {
+    padding-left: 10px;
   }
 }
 
