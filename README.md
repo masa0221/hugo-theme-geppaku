@@ -1,6 +1,8 @@
 Hugo ashen simple theme
 =============================
 
+![sample](./images/sample.png)
+
 ## Installation
 
 ```
