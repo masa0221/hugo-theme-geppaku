@@ -73,6 +73,10 @@ h4:before {
   display:inline-block;
 }
 
+.article .content {
+  word-break: break-all;
+}
+
 .article .content ul {
   margin-bottom: 20px;
 }
