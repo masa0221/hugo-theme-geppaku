@@ -85,6 +85,12 @@ h4:before {
   margin-bottom: 20px;
 }
 
+.article .content pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .adsense .sponsor-label {
   display: block;
   font-size: 13px;
