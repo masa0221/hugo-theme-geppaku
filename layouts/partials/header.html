@@ -3,13 +3,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     {{ .Hugo.Generator }}
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}/images/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicon.ico">
     {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ else }}
-    <link href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .Site.BaseURL }}/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- font awesome -->
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
     <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   </head>
   <body>
