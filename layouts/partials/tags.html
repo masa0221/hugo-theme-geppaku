@@ -1,13 +1,11 @@
 {{if .Params.tags }}
-<div class="article-tags">
-  <div class="tags">
-    <ul>
-      {{ range .Params.tags }}
-      <li>
-        <a href="/tags/{{ . | urlize }}"><span></span>{{ . }}</a>
-      </li>
-      {{ end }}
-    </ul>
-  </div>
+<div class="tags">
+  <ul>
+    {{ range .Params.tags }}
+    <li>
+      <a href="/tags/{{ . | urlize }}"><span></span>{{ . }}</a>
+    </li>
+    {{ end }}
+  </ul>
 </div>
 {{ end }}

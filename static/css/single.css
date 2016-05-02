@@ -1,9 +1,12 @@
+h1 {
+  margin-bottom: 10px;
+}
+
 h2 {
     position: relative;
     padding: 20px 0px 20px 40px;
     color: #303030;
     font-size: 25px;
-    line-height; 30px;
 }
 
 h2:before {
@@ -74,7 +77,7 @@ h4:before {
 }
 
 .article .content {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .article .content ul {
@@ -93,6 +96,7 @@ h4:before {
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
+  margin-bottom: 20px;
 }
 
 .article .content blockquote {
@@ -153,8 +157,8 @@ h4:before {
   margin-bottom: 30px;
 }
 
-.article-footer .article-tags {
-  margin-bottom: 50px;
+.article-footer .tags {
+  margin-bottom: 70px;
 }
 
 #disqus_thread {

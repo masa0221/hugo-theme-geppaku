@@ -86,25 +86,20 @@ a:hover {
   overflow: hidden;
 }
 
+.article-meta {
+  overflow: hidden;
+}
+
 .article .posttime {
   color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   float: left;
   margin-right: 10px;
-}
-
-.article .article-tags {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-.article .article-tags a {
-  line-height: 20px;
+  margin-top: 4px;
 }
 
 .article .content {
   clear: left;
-  text-decoration: none;
   color: #303030;
   margin-bottom: 10px;
 }
@@ -161,10 +156,15 @@ a:hover {
 /**
  * tags
  */
+.tags {
+  overflow: hidden;
+}
+
 .tags li {
   float: left;
   list-style: none;
   margin-right: 5px;
+  margin-bottom: 2px;
 }
 
 .tags a {

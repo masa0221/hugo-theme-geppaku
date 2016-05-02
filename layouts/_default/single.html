@@ -14,8 +14,10 @@
           <header>
             <div class="article-header">
               <h1>{{ .Title }}</h1>
-              <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
-              {{ partial "tags.html" . }}
+              <div class="article-meta">
+                <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
+                {{ partial "tags.html" . }}
+              </div>
             </div>
             {{ partial "share.html" . }}
           </header>
