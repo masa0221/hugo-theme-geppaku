@@ -255,6 +255,12 @@ a:hover {
 /**
  * footer
  */
+#site-footer-wrap {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
 #site-footer {
   clear: left;
   background: #F4F4F4;
@@ -263,14 +269,13 @@ a:hover {
   height: 50px;
   padding: 25px 0px 0px 150px;
 
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  margin:0 auto;
 }
 
 #site-footer span {
+  display: inline-block;
   color: #303030;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #site-footer a {
@@ -337,6 +342,10 @@ a:hover {
 @media screen and (max-width: 600px) {
   .sidebar .adsense {
     margin-left: 10px;
+  }
+
+  #site-footer {
+    padding: 10px 0px 10px 10px;
   }
 }
 
