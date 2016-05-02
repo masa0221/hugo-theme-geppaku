@@ -10,7 +10,7 @@ h1 {
  */
 .article {
   margin: 10px 0px 30px 0px;
-  border-bottom: 1px solid #ACAEB2;
+  border-bottom: 1px solid #B4B3BA;
 }
 
 h2 {
@@ -64,7 +64,7 @@ h2 {
 #pager .pagination .active a {
   padding: 10px 8px;
   background: #747474;
-  color: #FBFDFF;
+  color: #F4F4F4;
 }
 
 @media screen and (max-width: 950px) {
