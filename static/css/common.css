@@ -135,6 +135,7 @@ a:hover {
   min-height:200px; 
   height: 200px;
   height: auto !important; 
+  overflow: hidden;
 }
 
 .sidebar-content {
@@ -317,7 +318,7 @@ a:hover {
     margin-left: 10px;
     width: auto;
     padding: 0px;
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
   }
 
   .sidebar-header {
