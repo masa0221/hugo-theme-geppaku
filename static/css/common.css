@@ -47,7 +47,7 @@ a:hover {
  * header
  */
 .site-header { 
-  background: #F4F4F4;
+  background: #F6F7F8;
   height: 60px;
   margin-bottom: 40px;
 }
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .article .posttime {
-  color: rgba(0, 0, 0, 0.4);
+  color: #747474;
   font-size: 12px;
   float: left;
   margin-right: 10px;
@@ -177,7 +177,7 @@ a:hover {
 }
 
 .tags a:hover {
-  background: #F4F4F4;
+  background: #F6F7F8;
   color: #303030;
   font-size: 14px;
   padding: 2px 3px;
@@ -263,7 +263,7 @@ a:hover {
 
 #site-footer {
   clear: left;
-  background: #F4F4F4;
+  background: #F6F7F8;
   padding-top: 10px;
   min-height:50px; 
   height: 50px;

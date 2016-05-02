@@ -54,7 +54,7 @@ h2 {
 }
 
 #pager .pagination a:hover {
-  background: #F4F4F4;
+  background: #F6F7F8;
   color: #303030;
   font-size: 14px;
   padding: 10px 8px;
@@ -64,7 +64,7 @@ h2 {
 #pager .pagination .active a {
   padding: 10px 8px;
   background: #747474;
-  color: #F4F4F4;
+  color: #F6F7F8;
 }
 
 @media screen and (max-width: 950px) {
