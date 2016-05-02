@@ -1,14 +1,20 @@
-Hugo ashen simple theme
+Geppaku
 =============================
+Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 
-![sample](./images/sample.png)
+Index page:
+![list](./images/list.png)
+
+Post page:
+![post](./images/tn.png)
+
 
 ## Installation
 
 ```
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/masa0221/hugo-theme-ashen-simple ashen-simple
+$ git clone https://github.com/masa0221/hugo-theme-geppaku geppaku
 ```
 See the Hugo documentation for more information.
 
@@ -20,7 +26,7 @@ Example of config.toml file:
 baseurl = "http://your-site-here/"
 languageCode = "en-us"
 title = "your site title"
-theme= "ashen-simple"
+theme= "geppaku"
 googleAnalytics = ""
 
 [author]
