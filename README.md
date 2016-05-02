@@ -74,7 +74,7 @@ Create markdown file:
 hugo new post/2016/05/hello-hugo.md
 ```
 
-Example of the markdown file:
+Example of the toml file:
 ```md
 +++
 date = "2016-04-30T16:44:45+09:00"
