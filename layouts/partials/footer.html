@@ -1,14 +1,20 @@
-<footer>
-  <div id="site-footer-wrap">
-    <div id="site-footer">
-      <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
-      <span>
-        {{ if .Site.Copyright }}
-        {{ .Site.Copyright }}
-        {{ else }}
-        Copyright (c) {{ .Site.LastChange.Format "2006" }}, <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-        {{ end }}
-      </span>
-    </div>
-  </div>
-</footer>
+        </div><!-- #main-->
+        {{ partial "sidebar.html" . }}
+      </div><!-- .container -->
+      <footer>
+        <div id="site-footer-wrap">
+          <div id="site-footer">
+            <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
+            <span>
+              {{ if .Site.Copyright }}
+              {{ .Site.Copyright }}
+              {{ else }}
+              Copyright (c) {{ .Site.LastChange.Format "2006" }}, <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+              {{ end }}
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div><!-- #wrap -->
+  </body>
+</html>
