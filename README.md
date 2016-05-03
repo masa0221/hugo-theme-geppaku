@@ -57,8 +57,8 @@ disqusShortname = ""
     [params.adsense]
         # If you want to display Google adsense set these
         # This is Optional values
-        # 1. Create file written of the adsense tag into the directory "layout/partials"
-        # 2. Please set file path name omitted "layout"
+        # 1. Create file written of the adsense tag into the directory "layouts/partials"
+        # 2. Please set file path name omitted "layouts/partials"
         sidebar = "adsense/sidebar.html"
         content = "adsense/content.html"
 ```
