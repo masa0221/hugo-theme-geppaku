@@ -23,7 +23,7 @@
       </div>
       {{ end }}
       {{ partial "share.html" . }}
-      {{ partial "disqus.html" . }}
+      {{ template "_internal/disqus.html" . }}
       {{ if or .Prev .Next }}
       <div id="pagenavigation-next-prev">
         {{ if .Next }}

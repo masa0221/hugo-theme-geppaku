@@ -45,6 +45,7 @@ languageCode = "en-us"
 title = "your site title"
 theme= "geppaku"
 googleAnalytics = "" # Optional
+disqusShortname = "" # Optional
 
 [author]
     # If you want to display author information set these
@@ -58,11 +59,6 @@ googleAnalytics = "" # Optional
     github   = "your github id"
 
 [params]
-    # Please set id when you want to add to feature for comment
-    # @see https://disqus.com
-    # This is Optional values
-    disqus = "your disqus shortname"
-
     [params.sharebutton]
         # If you want to display share buttons set these
         # This is Optional values
