@@ -1,23 +1,25 @@
 {{ partial "header.html" . }}
-{{ if not .IsHome }}
-<div class="articles-list-header">
-  <h1>Archive: <span id="archive-value">{{ .Title }}</span></h1>
+<div id="article-list">
+  {{ if not .IsHome }}
+  <div id="articles-list-header">
+    <h1>Archive: <span id="archive-value">{{ .Title }}</span></h1>
+  </div>
+  {{ end }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+  {{ range $paginator.Pages }}
+  <div class="article">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div class="article-meta">
+      <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
+      {{ partial "tags.html" . }}
+    </div>
+  </div><!-- .article -->
+  {{ end }}
+  <nav>
+    <div id="pager">
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </nav>
 </div>
-{{ end }}
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-{{ range $paginator.Pages }}
-<div class="article article-list">
-  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <div class="article-meta">
-    <span class="posttime">{{ .Date.Format "2006/01/02" }}</span>
-    {{ partial "tags.html" . }}
-  </div>
-</div><!-- .article -->
-{{ end }}
-<nav>
-  <div id="pager">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-    {{ template "_internal/pagination.html" . }}
-  </div>
-</nav>
 {{ partial "footer.html" . }}

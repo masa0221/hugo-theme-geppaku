@@ -420,39 +420,45 @@ h4:before {
 /**
  * article-list
  */
-.articles-list-header h1 {
-  font-size: 30px;
+#articles-list-header h1 {
+  font-size: 25px;
   color: #303030;
   text-decoration: none;
   padding-left: 20px;
 }
 
-.article-list {
-  margin: 10px 0px 30px 0px;
-  border-bottom: 1px solid #B4B3BA;
+#articles-list-header {
+  border-bottom: 2px solid #F6F7F8;
+  margin-bottom: 50px;
 }
 
-.article-list h2 {
+#article-list .article {
+  padding: 0px 0px 48px 20px;
+  margin: 50px 0px 0px 0px;
+  border-bottom: 2px solid #F6F7F8;
+}
+
+#article-list h2 {
   font-size: 18px;
   padding: 0;
   min-height: 18px;
   line-height: 18px;
 }
 
-.article-list h2:before {
+#article-list h2:before {
     border: none;
 }
 
-.article-list h2:after {
+#article-list h2:after {
     border: none;
 }
 
-.article-list h2 a {
+#article-list h2 a {
   color: #303030;
   text-decoration: none;
 }
 
-.article-list h2 a:hover {
+#article-list h2 a:hover {
   color: #4078C0;
 }
 
@@ -461,11 +467,15 @@ h4:before {
  */
 #pager {
   width: auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #pager .pagination {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -587,6 +597,10 @@ h4:before {
     padding: 0px 10px 30px 10px;
   }
 
+  #article-list .article {
+    padding-right: 20px;
+  }
+
   .sidebar {
     clear: left;
     float: none;
@@ -608,14 +622,7 @@ h4:before {
     padding-left: 20px;
   }
 
-  #pager {
-    overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    float: none;
-  }
-
-  .articles-list-header h1 {
+  #articles-list-header h1 {
     padding-left: 10px;
   }
 }
@@ -624,21 +631,31 @@ h4:before {
   h1 {
     font-size: 25px;
   }
-  .articles-list-header h1 {
+
+  #articles-list-header h1 {
     font-size: 16px;
   }
 
-  .article-list h2 {
+  #articles-list-header {
+    margin-bottom: 20px;
+  }
+
+  #article-list h2 {
     font-size: 14px;
   }
 
-  .article-list {
+  #article-list {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 
+  #article-list .article {
+    padding: 0px 10px 18px 10px;
+    margin: 20px 0px 0px 0px;
+  }
+
   #pager .pagination {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 
