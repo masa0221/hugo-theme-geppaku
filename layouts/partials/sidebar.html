@@ -30,13 +30,14 @@
     </div>
   </div>
   {{ end }}
+  {{ with .Site.Taxonomies.categories }}
   <div class="sidebar-content">
     <div class="sidebar-header">
       <span>Categories</span>
     </div>
     <div class="categories">
       <ul>
-        {{ range $category, $taxonomy := .Site.Taxonomies.categories }}
+        {{ range $category, $taxonomy := . }}
         <li>
           <a href="/categories/{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
         </li>
@@ -44,6 +45,7 @@
       </ul>
     </div>
   </div>
+  {{ end }}
   <div class="sidebar-content">
     <div class="sidebar-header">
       <span>RSS</span>
