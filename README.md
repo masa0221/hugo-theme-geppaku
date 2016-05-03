@@ -6,7 +6,7 @@ Index page:
 ![list](./images/list.png)
 
 Post page:
-![post](./images/tn.png)
+![post](./images/screenshot.png)
 
 
 ## Installation
