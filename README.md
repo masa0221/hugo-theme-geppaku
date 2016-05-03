@@ -88,3 +88,8 @@ tags = [
 Hello Hugo!
 ```
 
+### Example
+
+Please check sample.  
+[https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite](
+https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite)
