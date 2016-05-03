@@ -2,13 +2,17 @@ Geppaku
 =============================
 Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 
+Note that it is not in the "Seppuku".  
+I'm not Samurai.  
+
+Please check [http://2626.info/](http://2626.info/), if you are interested in this theme.
+
 ## Screenshot
 ### Index page
 ![list](./images/list.png)
 
 ### Post page
 ![post](./images/screenshot.png)
-
 
 ## Installation
 
