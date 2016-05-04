@@ -59,8 +59,9 @@ a:hover {
 }
 
 .site-header-left {
-  padding: 15px 0px 12px 150px;
-  float: left;
+  padding: 15px 0px 12px 20px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .site-header-title {
@@ -259,16 +260,17 @@ a:hover {
   position: absolute;
   width: 100%;
   bottom: 0;
+  background: #F6F7F8;
 }
 
 #site-footer {
   clear: left;
-  background: #F6F7F8;
   padding-top: 10px;
   min-height:50px; 
   height: 50px;
-  padding: 25px 0px 0px 150px;
+  padding: 25px 0px 0px 20px;
 
+  width: 1000px;
   margin:0 auto;
 }
 
@@ -466,17 +468,12 @@ h4:before {
  * pager
  */
 #pager {
-  width: auto;
   margin-top: 20px;
   margin-bottom: 30px;
   overflow: hidden;
   padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#pager .pagination {
+  margin: 20px auto 30px auto;
   width: 60%;
-  margin: 0 auto;
 }
 
 #pager .pagination li {
@@ -485,10 +482,12 @@ h4:before {
 }
 
 #pager .pagination a {
+  display: inline-block;
   text-decoration: none;
   color: #303030;
   font-size: 14px;
   padding: 10px 8px;
+  margin-bottom: 10px;
   margin-right: 10px;
   border: 1px solid #747474;
 }
@@ -575,7 +574,8 @@ h4:before {
   }
 
   .site-header-left {
-    padding-left: 20px;
+    padding: 15px 0px 12px 20px;
+    width: auto;
   }
 
   #main {
@@ -601,6 +601,10 @@ h4:before {
     padding-right: 20px;
   }
 
+  #pager {
+    width: 50%;
+  }
+
   .sidebar {
     clear: left;
     float: none;
@@ -618,8 +622,13 @@ h4:before {
     width: auto;
   }
 
+  .sidebar .adsense {
+    margin-left: 20px;
+  }
+
   #site-footer {
     padding-left: 20px;
+    width: auto;
   }
 
   #articles-list-header h1 {
@@ -630,6 +639,10 @@ h4:before {
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 25px;
+  }
+
+  .site-header-left {
+    padding-left: 10px;
   }
 
   #articles-list-header h1 {
@@ -654,9 +667,9 @@ h4:before {
     margin: 20px 0px 0px 0px;
   }
 
-  #pager .pagination {
-    width: 80%;
-    margin: 0 auto;
+  #pager {
+    width: 100%;
+    padding-left: 10px;
   }
 
   .sidebar .adsense {
