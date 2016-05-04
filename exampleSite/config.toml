@@ -1,7 +1,7 @@
 baseurl = "http://your-site-here/"
 languageCode = "en-us"
 title = "your site title"
-theme= "geppaku"
+theme= "hugo-theme-geppaku"
 googleAnalytics = "" # Optional
 disqusShortname = "" # Optional
 
