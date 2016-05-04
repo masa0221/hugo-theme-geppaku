@@ -31,7 +31,7 @@ Geppaku is the white color including a thin blue that reminiscent of the light o
 ```
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/masa0221/hugo-theme-geppaku geppaku
+$ git clone https://github.com/masa0221/hugo-theme-geppaku hugo-theme-geppaku
 ```
 See the Hugo documentation for more information.
 
@@ -43,7 +43,7 @@ Example of config.toml file:
 baseurl = "http://your-site-here/"
 languageCode = "en-us"
 title = "your site title"
-theme= "geppaku"
+theme= "hugo-theme-geppaku"
 googleAnalytics = "" # Optional
 disqusShortname = "" # Optional
 
