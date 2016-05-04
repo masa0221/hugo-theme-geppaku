@@ -9,10 +9,10 @@ Please check [http://2626.info/](http://2626.info/), if you are interested in th
 
 ## Screenshot
 ### Index page
-![list](./images/list.png)
+![list](https://github.com/masa0221/hugo-theme-geppaku/blob/master/images/list.png)
 
 ### Post page
-![post](./images/screenshot.png)
+![post](https://github.com/masa0221/hugo-theme-geppaku/blob/master/images/screenshot.png)
 
 ## Installation
 
