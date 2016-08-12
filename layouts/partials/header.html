@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     {{ .Hugo.Generator }}
     <link rel="shortcut icon" href="/images/favicon.ico">
-    {{ if .RSSlink }}
-    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ else }}
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
+    <link href="{{ or .RSSLink .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- google_analytics -->
