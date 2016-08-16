@@ -39,7 +39,7 @@
       <ul>
         {{ range $category, $taxonomy := . }}
         <li>
-          <a href="/categories/{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
+          <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
         </li>
         {{ end }}
       </ul>
