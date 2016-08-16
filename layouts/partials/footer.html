@@ -7,7 +7,7 @@
             <span>Powered by <a href="https://gohugo.io/">Hugo</a>.</span>
             <span>
               {{ if .Site.Copyright }}
-              {{ .Site.Copyright }}
+              {{ .Site.Copyright | markdownify}}
               {{ else }}
               Copyright (c) {{ .Site.LastChange.Format "2006" }}, <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
               {{ end }}
