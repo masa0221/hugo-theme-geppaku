@@ -39,7 +39,7 @@
       <ul>
         {{ range $category, $taxonomy := . }}
         <li>
-          <a href="/categories/{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
+          <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}"><span></span>{{ $category }} ({{ $taxonomy.Count }})</a>
         </li>
         {{ end }}
       </ul>
@@ -51,7 +51,7 @@
       <span>RSS</span>
     </div>
     <div id="rss">
-      <a href="{{ if .RSSlink }}{{ .RSSlink }}{{ else }}/index.xml{{ end }}" type="application/rss+xml" target="_blank">
+      <a href="{{ or .RSSLink .Site.RSSLink }}" type="application/rss+xml" target="_blank">
         <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
       </a>
     </div>
