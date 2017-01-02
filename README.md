@@ -45,6 +45,7 @@ disqusShortname = ""
     twitter  = "your twitter id"
     linkedin = "your linkedin id"
     github   = "your github id"
+    tumblr   = "your tumblr id"
 
 [params]
     [params.sharebutton]

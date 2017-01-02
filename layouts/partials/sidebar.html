@@ -26,6 +26,9 @@
         {{ with .Site.Author.linkedin }}
         <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
         {{ end }}
+        {{ with .Site.Author.tumblr }}
+        <a href="https://{{ . }}.tumblr.com/"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
+        {{ end }}
       </div>
     </div>
   </div>
