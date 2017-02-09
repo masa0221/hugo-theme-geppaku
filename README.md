@@ -53,6 +53,7 @@ disqusShortname = ""
         # This is Optional values
         twitter  = true
         facebook = true
+        tumblr   = true
         # hatena   = true # hatena is Japanese social media
         google   = true
         pocket   = true
