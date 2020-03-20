@@ -54,7 +54,7 @@
       <span>RSS</span>
     </div>
     <div id="rss">
-      <a href="{{ or .RSSLink .Site.RSSLink }}" type="application/rss+xml" target="_blank">
+      <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" type="application/rss+xml" target="_blank">
         <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
       </a>
     </div>
