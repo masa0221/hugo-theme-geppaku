@@ -34,6 +34,7 @@ title = "your site title"
 theme= "hugo-theme-geppaku"
 googleAnalytics = ""
 disqusShortname = ""
+# enableRobotsTXT = true
 
 [author]
     # If you want to display author information set these
