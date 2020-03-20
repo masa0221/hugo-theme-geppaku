@@ -2,8 +2,8 @@ Geppaku
 =============================
 Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 
-Note that it is not in the "Seppuku".  
-I'm not Samurai.  
+Note that it is not in the "Seppuku".
+I'm not Samurai.
 
 Please check [http://2626.info/](http://2626.info/), if you are interested in this theme.
 
@@ -19,7 +19,7 @@ Please check [http://2626.info/](http://2626.info/), if you are interested in th
 ```
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/masa0221/hugo-theme-geppaku hugo-theme-geppaku
+$ git clone https://github.com/koooge/hugo-theme-geppaku hugo-theme-geppaku
 ```
 See the Hugo documentation for more information.
 
@@ -68,7 +68,7 @@ disqusShortname = ""
         sidebar = "adsense/sidebar.html"
         content = "adsense/content.html"
 ```
-You can delete optional parameter.  
+You can delete optional parameter.
 Please delete unnecessary parameter.
 
 ### Post
@@ -96,6 +96,5 @@ Hello Hugo!
 
 ### Example
 
-Please check sample.  
-[https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite](
-https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite)
+Please check sample.
+[https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite](https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite)
