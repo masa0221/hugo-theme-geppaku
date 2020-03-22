@@ -19,7 +19,7 @@ jobs:
         working-directory: ./exampleSite
         run: |
           export BASE_URL="https://koooge.github.io/hugo-theme-geppaku/"
-          hugo --gc --minify --themesDir ../ --layoutDir ../layouts --baseURL "${BASE_URL}"
+          hugo --gc --minify --themesDir ../ --layoutDir ../layouts --config config/test/config.toml --baseURL "${BASE_URL}"
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

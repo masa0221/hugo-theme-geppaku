@@ -1,3 +1,5 @@
+![Deploy to github pages](https://github.com/koooge/hugo-theme-geppaku/workflows/Deploy%20to%20github%20pages/badge.svg)
+
 Geppaku
 =============================
 Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
@@ -5,7 +7,7 @@ Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 Note that it is not in the "Seppuku".
 I'm not Samurai.
 
-Please check [http://koooge.com/](http://koooge.com/), if you are interested in this theme.
+Please check [https://koooge.github.io/hugo-theme-geppaku/](https://koooge.github.io/hugo-theme-geppaku/), if you are interested in this theme.
 
 ## Screenshot
 ### Index page
@@ -94,8 +96,3 @@ tags = [
 +++
 Hello Hugo!
 ```
-
-### Example
-
-Please check sample.
-[https://github.com/koooge/hugo-theme-geppaku/tree/master/exampleSite](https://github.com/koooge/hugo-theme-geppaku/tree/master/exampleSite)
