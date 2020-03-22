@@ -9,21 +9,21 @@ tags = [
   "Hugo theme",
   ]
 +++
-Geppaku is bluish white theme for [Hugo](http://gohugo.io/).  
+Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 It is color name in Japan. Chinese character is "月白".
 
 > 月白（げっぱく）とは、月の光を思わせる薄い青みを含んだ白色のことです。
 <small>via http://irocore.com/geppaku/</small>
 
-Geppaku is the white color including a thin blue that reminiscent of the light of the moon.  
+Geppaku is the white color including a thin blue that reminiscent of the light of the moon.
 (If that translate is wrong, please inform me using PullRequest.)
 
 ## Screenshot
 ### Index page
-![list](/images/2016/05/03/list.png)
+![list](/images/list.png)
 
 ### Post page
-![post](/images/2016/05/03/screenshot.png)
+![post](/images/screenshot.png)
 
 
 ## Installation

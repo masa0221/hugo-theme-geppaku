@@ -1,1 +1,2 @@
-staticDir = "../static"
+staticDir = ["../static", "../doc"]
+canonifyURLs = true
