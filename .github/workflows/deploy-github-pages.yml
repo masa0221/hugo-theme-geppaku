@@ -1,0 +1,30 @@
+name: Deploy to github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.68.1'
+          extended: false
+      - name: Build
+        working-directory: ./exampleSite
+        run: |
+          export BASE_URL="https://koooge.github.io/hugo-theme-geppaku/"
+          hugo --gc --minify --themesDir ../ --layoutDir ../layouts --baseURL "${BASE_URL}"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          #deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./exampleSite/public
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

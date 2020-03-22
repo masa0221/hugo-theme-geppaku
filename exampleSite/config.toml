@@ -1,7 +1,7 @@
 baseurl = "http://your-site-here/"
 languageCode = "en-us"
 title = "your site title"
-theme= "hugo-theme-geppaku"
+# theme= "hugo-theme-geppaku"
 googleAnalytics = "" # Optional
 disqusShortname = "" # Optional
 
@@ -34,4 +34,4 @@ disqusShortname = "" # Optional
         # 1. Create file written of the adsense tag into the directory "layouts/partials"
         # 2. Please set file path name omitted "layouts/partials"
         # sidebar = "adsense/sidebar.html"
-        content = "adsense/content.html"
+        # content = "adsense/content.html"
