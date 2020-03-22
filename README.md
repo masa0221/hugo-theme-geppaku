@@ -5,14 +5,14 @@ Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 Note that it is not in the "Seppuku".
 I'm not Samurai.
 
-Please check [http://2626.info/](http://2626.info/), if you are interested in this theme.
+Please check [http://koooge.com/](http://koooge.com/), if you are interested in this theme.
 
 ## Screenshot
 ### Index page
-![list](https://github.com/masa0221/hugo-theme-geppaku/blob/master/images/list.png)
+![list](https://github.com/koooge/hugo-theme-geppaku/blob/master/images/list.png)
 
 ### Post page
-![post](https://github.com/masa0221/hugo-theme-geppaku/blob/master/images/screenshot.png)
+![post](https://github.com/koooge/hugo-theme-geppaku/blob/master/images/screenshot.png)
 
 ## Installation
 
@@ -98,4 +98,4 @@ Hello Hugo!
 ### Example
 
 Please check sample.
-[https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite](https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite)
+[https://github.com/koooge/hugo-theme-geppaku/tree/master/exampleSite](https://github.com/koooge/hugo-theme-geppaku/tree/master/exampleSite)
