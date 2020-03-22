@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - '*'
+    pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.68.1'
+          extended: false
+      - name: Build
+        working-directory: ./exampleSite
+        run: |
+          export BASE_URL="https://koooge.github.io/hugo-theme-geppaku/"
+          hugo --gc --minify --themesDir ../ --layoutDir ../layouts --config config/test/config.toml --baseURL "${BASE_URL}"

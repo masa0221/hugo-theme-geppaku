@@ -1,4 +1,4 @@
-![Deploy to github pages](https://github.com/koooge/hugo-theme-geppaku/workflows/Deploy%20to%20github%20pages/badge.svg)
+![Deploy to github pages](https://github.com/koooge/hugo-theme-geppaku/workflows/Test/badge.svg)
 
 Geppaku
 =============================
