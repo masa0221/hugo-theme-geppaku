@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <div id="article-list">
   {{ if not .IsHome }}
   <div id="articles-list-header">
@@ -22,4 +22,4 @@
     </div>
   </nav>
 </div>
-{{ partial "footer.html" . }}
+{{ end }}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" . }}
+<body>
+  <div id="wrap">
+    {{ template "_internal/google_analytics.html" . }}
+    <header class="site-header">
+      <div class="site-header-left">
+        <a class="site-header-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      </div>
+    </header>
+    <div class="container">
+      <div id="main">
+        {{ block "main" . }}{{ end }}
+      </div>
+      {{ partial "sidebar.html" . }}
+    </div>
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>
