@@ -1,2 +1,3 @@
 staticDir = ["../static", "../doc"]
+assetDir = "../assets"
 canonifyURLs = true
