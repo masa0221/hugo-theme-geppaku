@@ -1,4 +1,4 @@
 <span class="inline-svg">
   {{ $icon := resources.Get (print "fontawesome/" . ".svg") }}
-  {{ replace $icon.Content "<path" "<path = fill=\"currentColor\"" | safeHTML }}
+  {{ replace $icon.Content "<path" "<path fill=\"currentColor\"" | safeHTML }}
 </span>
