@@ -11,10 +11,10 @@ Please check [https://koooge.github.io/hugo-theme-geppaku/](https://koooge.githu
 
 ## Screenshot
 ### Index page
-![list](https://github.com/koooge/hugo-theme-geppaku/blob/master/doc/images/list.png)
+![list](https://github.com/koooge/hugo-theme-geppaku/blob/master/images/list.png)
 
 ### Post page
-![post](https://github.com/koooge/hugo-theme-geppaku/blob/master/doc/images/screenshot.png)
+![post](https://github.com/koooge/hugo-theme-geppaku/blob/master/images/screenshot.png)
 
 ## Installation
 
