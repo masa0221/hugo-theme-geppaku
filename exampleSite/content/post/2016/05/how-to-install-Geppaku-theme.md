@@ -20,10 +20,10 @@ Geppaku is the white color including a thin blue that reminiscent of the light o
 
 ## Screenshot
 ### Index page
-![list](/images/list.png)
+![list](/list.png)
 
 ### Post page
-![post](/images/screenshot.png)
+![post](/screenshot.png)
 
 
 ## Installation
