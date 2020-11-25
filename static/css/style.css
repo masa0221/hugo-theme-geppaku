@@ -105,16 +105,16 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.article .content .header-link {
+.article .content .heading {
   text-decoration: none;
   color: #303030;
 }
 
-.article .content .header-link-icon {
+.article .content .heading svg {
   display: none;
 }
 
-.article .content .header-link:hover .header-link-icon {
+.article .content .heading:hover svg {
   display: inline-block;
   fill: #747474;
 }
@@ -125,11 +125,11 @@ a:hover {
   padding-left: 40px;
 }
 
-.article .content a {
+.article .content a :not(.heading) {
   font-size: 14px;
 }
 
-.article .content a:hover {
+.article .content a:hover :not(.heading) {
   font-size: 14px;
 }
 
