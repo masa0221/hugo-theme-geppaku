@@ -105,6 +105,20 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.article .content .header-link {
+  text-decoration: none;
+  color: #303030;
+}
+
+.article .content .header-link-icon {
+  display: none;
+}
+
+.article .content .header-link:hover .header-link-icon {
+  display: inline-block;
+  fill: #747474;
+}
+
 .article .content ol,
 .article .content ul
 {
@@ -690,4 +704,3 @@ h4:before {
     padding: 10px 0px 10px 10px;
   }
 }
-
