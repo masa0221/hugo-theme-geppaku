@@ -74,6 +74,8 @@ disqusShortname = ""
 You can delete optional parameter.
 Please delete unnecessary parameter.
 
+- :white_check_mark: [Multilingual Mode](https://gohugo.io/content-management/multilingual/)
+
 ### Post
 
 Create markdown file:
