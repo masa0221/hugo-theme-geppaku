@@ -1,5 +1,7 @@
 {{ define "main" }}
 <div class="article">
+  {{- partial "language-selector.html" . }}
+
   <header>
     <div class="article-header">
       <h1>{{ .Title }}</h1>
