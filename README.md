@@ -33,7 +33,7 @@ Example of config.toml file:
 baseurl = "http://your-site-here/"
 languageCode = "en-us"
 title = "your site title"
-theme= "hugo-theme-geppaku"
+theme = "hugo-theme-geppaku"
 googleAnalytics = ""
 disqusShortname = ""
 # enableRobotsTXT = true

@@ -1,4 +1,8 @@
 <div class="sidebar">
+  <div class="sidebar-content">
+    {{- partial "language-selector.html" . }}
+  </div>
+
   {{ with .Site.Params.adsense.sidebar }}
   <div class="sidebar-content">
     <div class="sidebar-header">
