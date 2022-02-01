@@ -1,6 +1,6 @@
 name = "Geppaku"
 license = "MIT"
-licenselink = "https://github.com/koooge/hugo-theme-geppaku/blob/master/LICENSE.md"
+licenselink = "https://github.com/koooge/hugo-theme-geppaku/blob/main/LICENSE.md"
 description = "Geppaku is bluish white theme for Hugo"
 homepage = "https://github.com/koooge/hugo-theme-geppaku"
 tags = ["blog", "personal"]
