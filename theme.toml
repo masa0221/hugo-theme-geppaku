@@ -5,7 +5,7 @@ description = "Geppaku is bluish white theme for Hugo"
 homepage = "https://github.com/koooge/hugo-theme-geppaku"
 tags = ["blog", "personal"]
 features = ["blog"]
-min_version = 0.67
+min_version = 0.92.1
 
 [author]
   name = "The Geppaku Authors"
